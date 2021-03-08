@@ -1,0 +1,164 @@
+
+/* Font Family: Open Sans -> 300, 400, 600, 700, 800 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/* Font Family: Roboto -> 100, 300, 400, 500, 700, 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --font-open: 'Roboto', sans-serif;
+    --font-size-med: 0.65rem;
+    --font-size-p: 0.70rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-open);
+    color: #424141;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background-color: #242424;
+}
+
+.post {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    width: 22rem;
+    height: 31.8rem;
+    background-color: rgb(230, 230, 230);
+
+    font-family: var(--font-open);
+    letter-spacing: 0.50px;
+}
+
+/* _________________HEADER POST______________ */
+.post__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3.3rem;
+    padding: 0 0.8rem;
+}
+/* --header-logo--- */
+.post__header--logo {
+    width: auto;
+}
+.header__logo--photo {
+    width: 1.5rem;
+    height: 100%;
+}
+/* ---header username and location--- */
+.post__header--user {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+.post__header--user h1 {
+    margin: 0.2rem 0 0 0.6rem;
+    font-size: var(--font-size-med);
+    font-weight: 700;
+}
+.post__header--user h2 {
+    margin: 0 0 0.4rem 0.6rem;
+    font-size: var(--font-size-med);
+    font-weight: 600;
+}
+/* ---header menu-- */
+.post__header--menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 1rem;
+    height: 60%;
+}
+.header__menu--dots {
+    width: 0.25rem;
+    height: 0.25rem;
+    padding: 0.1rem;
+    border-radius: 70%;
+    margin-bottom: 0.15rem;
+    background-color: #242424;
+}
+
+/* ______________POST PHOTO______________*/
+.post__photo {
+    width: 100%;
+    height: 17.5rem;
+}
+.post__photo--background {
+    width: 100%;
+    height: 100%;
+    background-image: url(/styles/fotos/pexels-ann-h-4272264.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* __________INTERACTIONS__________ */
+.post__interaction {
+    display: flex;
+    flex-flow: column nowrap;
+
+    height: 11rem;
+    width: 100%;
+}
+/* --- Post actions --- */
+.post__interaction--action{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.4rem;
+}
+.action-icon {
+    width: 1.3rem;
+    margin: auto 0.15rem;
+}
+.interaction__action--cls {
+    margin: 0.2rem 0.5rem;
+}
+
+/* --- Post likes --- */
+.post__interaction--likes {
+    height: auto;
+    width: 100%;
+    font-size: var(--font-size-p);
+    padding: 0.2rem 0.9rem 0.4rem 0.9rem;
+}
+.post__interaction--likes > p > span {
+    font-weight: 700;
+}
+
+/* ---Post comment --- */
+
+.post__interaction--comments {
+    width: 100%;
+    height: 7.5rem;
+    padding: 0.2rem 0.9rem 0.4rem 0.9rem;
+    
+    font-size: var(--font-size-p);
+    font-weight: 300;
+}
