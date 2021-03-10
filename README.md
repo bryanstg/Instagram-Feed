@@ -1,4 +1,4 @@
-<h1>4Geeks Academy | Instagram Post </h1>
+<h2>4Geeks Academy | Instagram Post </h2>
  <p>This is a first-week project for the Fullstack Bootcamp from 4Geeks Academy.
  Fully made with HTML and CSS.
 </p>
